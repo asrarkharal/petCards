@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="menuStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="main.js"></script>
+    <title>Card</title>
+  </head>
+  <body>
+    <div class="hero">
+      <h1 id="welcome">Welcome.</h1>
+      <h2>Our friends need a home.</h2>
+    </div>
+    <div class="filter-nav">
+      <a class="" data-filter="all" href="">All Types</a>
+      <a class="" data-filter="dog" href="">Dogs</a>
+      <a class="" data-filter="cat" href="">Cats</a>
+      <a class="" data-filter="rabbit" href="">Rabbits</a>
+      <div class="nav-cart">
+        <span>Adopted:</span>
+        <i class="fa fa-sad-o"></i>
+        <span class="adoptedNumber">1</span>
+      </div>
+    </div>
+
+    <div class="animals-list"></div>
+
+    <!-- Template -->
+    <template id="animal-cards-template">
+      <div class="pet-card">
+        <div class="pet-card-text">
+          <h3>Meowsalot</h3>
+          <small>
+            <span class="age"> 3 Years old </span> -
+            <span class="species"> Cat </span>
+          </small>
+          <p class="para-detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+            nisi.
+          </p>
+          <a href="#" class="primary-btn">Adopt <span class="name"></span></a>
+        </div>
+        <div class="pet-card-photo">
+          <img
+            src="https://learnwebcode.github.io/pet-adoption-data/photos/meowsalot.webp"
+            alt="A cat named Meowsalot"
+          />
+        </div>
+      </div>
+    </template>
+    <!-- Template area ends here...-->
+
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
